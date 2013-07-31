@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<title>a4 travi mani</title>
+		<meta charset="utf-8">
+		<script src="jquery-1.9.1.min.js"></script>
+		<script src="script.js"></script>
+		<style>
+			body {
+				background-color:#9b9ecb;
+			}
+			#snack-wrapper{
+				width:900px;
+				margin:50px auto;
+				
+			}
+				h1 {
+				color:#fff;
+				font-family: helvetica;
+			}
+			.sorting li {
+				float:left;
+				list-style-type: none;
+				margin-left:50px;
+				color:white;
+			}
+			.sorting li a {
+				color:#333;
+				padding:5px 10px;
+				font-family: helvetica;
+				font-size:2em;
+				font-weight:bold;
+				display: inline-block;
+				text-decoration: none;
+			}
+			.sorting li:hover {
+				background-color:#fff;
+			}
+			#snacks {
+				clear: both;
+				padding-top: 30px;
+			}
+			#snacks > li {
+				float:left;
+				width:180px;
+				list-style-type: none;
+				margin-right: 20px;
+				
+			}
+			#snacks > li h2 {
+				color: white;
+				font-size: 1em;
+				margin: 0 0 5px 0;
+			}
+			
+			.details {
+				clear: both;
+				display: block;
+				font-family: helvetica;
+				text-align: center;
+				background-color: #9cf;
+				padding: 2px 0; 
+				font-weight: bold;
+				cursor: pointer;
+			}
+			.review {
+				display:none;
+				clear: both;
+				display: block;
+				text-align: center;
+				padding: 2px 0; 
+				font-weight: bold;
+				cursor: pointer;
+				background-color: #9fc;
+				margin:0;
+			}
+
+		</style>
+		<body>
+		<div id="snack-wrapper">
+			<h1>Top Snacks</h1>
+			
+			<ul class="sorting">
+				<li data-region="bananas"><a href="../a4-travi-mani/images/bananas.png">Healthy</a></li>
+				<li data-region="beer"><a href="#">Drink</a></li>
+				<li data-region="candy"><a href="#">Sweet</a></li>
+			</ul>
+			<ul id="snacks">
+				<li class="snack candy" data-rate="yum!">
+					<img src="../a4-travi-mani/images/icecream.png" width="102" height="250" alt="icecream">
+					<span class="details">review</span>
+				</li>
+				<li class="snack beer" data-rate="mmmmmmmmm">
+					<img src="../a4-travi-mani/images/beer175.png" width="175" height="250" alt="beer">
+					<span class="details">review</span>
+				</li>
+				<li class="snack bananas" data-rate="yuck">
+					<img src="../a4-travi-mani/images/bananas250.png" width="250" height="250" alt="bananas">
+					
+					<span class="details">review</span>
+				</li>
+			</ul>
+		</div>
+			
+		
+		</body>
+	</head>
+</html>
